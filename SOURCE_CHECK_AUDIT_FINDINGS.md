@@ -110,6 +110,17 @@ has three real ones, and no `example-starter.md`), and says "nothing under
 **Blocked on** nothing but scope — this pass audited check behaviour, and
 rewriting the README was not part of it. Worth a small separate change.
 
+**RESOLVED 2026-09-10**, in a separate change once Morgan opened the scope.
+All three entries corrected against the tree's actual state, plus a fourth
+reference to the same deleted `example-starter.md` in the "Writing
+practices" prose that the original note had missed. The `tools/` row also
+gained the four engine files it had never listed
+(`precedent_check.py`, `precedent_decommission.py`,
+`precedent_migrate_status.py`, `glossary_terms.json`) — listing a file set
+that does not match the directory is the same staleness, in a row being
+rewritten anyway. That change carries its own approval; it is **not**
+covered by the approval recorded below.
+
 ## What This Audit Could Not Do
 
 TODO item 52 lives in `alex137/BestPractice`, a different owner. This
