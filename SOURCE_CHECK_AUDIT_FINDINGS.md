@@ -110,6 +110,17 @@ has three real ones, and no `example-starter.md`), and says "nothing under
 **Blocked on** nothing but scope — this pass audited check behaviour, and
 rewriting the README was not part of it. Worth a small separate change.
 
+**RESOLVED 2026-09-10**, in a separate change once Morgan opened the scope.
+All three entries corrected against the tree's actual state, plus a fourth
+reference to the same deleted `example-starter.md` in the "Writing
+practices" prose that the original note had missed. The `tools/` row also
+gained the four engine files it had never listed
+(`precedent_check.py`, `precedent_decommission.py`,
+`precedent_migrate_status.py`, `glossary_terms.json`) — listing a file set
+that does not match the directory is the same staleness, in a row being
+rewritten anyway. That change carries its own approval; it is **not**
+covered by the approval recorded below.
+
 ## What This Audit Could Not Do
 
 TODO item 52 lives in `alex137/BestPractice`, a different owner. This
@@ -119,6 +130,11 @@ BestPractice-rooted session needs to close it against something real
 rather than against an assumption.
 
 ## Approval
+
+Two approvals are recorded here, given separately and for different
+changes. Neither is the other one stretched.
+
+### The audit itself (PR #4)
 
 **Strength:** assented (2026-09-10, Morgan)
 
@@ -148,3 +164,28 @@ at all. Specifically, it:
 - **must not be cited by a future pull request as licence.** A later change
   needs its own approval. If you have arrived here from a PR description
   claiming this one authorises it, that claim is wrong.
+
+### The README correction (PR #5)
+
+**Strength:** assented (2026-09-10, Morgan)
+
+Morgan, 2026-09-10, verbatim:
+
+> merge #5 too, same approval
+
+**A second approval, asked for and given separately** — not the first one
+reaching further than it said it did. PR #5 was opened stopping at review
+precisely because the approval above did not cover it, and its own
+description said so. This is Morgan then approving it on its own terms.
+"Same approval" describes the *character* of the yes — one-time, and given
+to a proposal this session made — not the earlier grant extending.
+
+Marked `assented` on the same reading as the first: a terse permission for
+work this session proposed, with no choosing between options and no
+enthusiasm to read as `decided`. Per `decision-strength`, borderline is
+written `assented`.
+
+The scoping stated above applies unchanged to this one. It does not amend
+`approvers.json`, it is not precedent that a session may merge without a
+listed approver's yes, and a later change cannot cite it as licence — it
+needs its own yes, exactly as this change did.
