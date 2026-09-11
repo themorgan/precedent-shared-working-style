@@ -6,14 +6,14 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 4 practice files (3 resident, 1 on-demand). One file per practice.
+`practices/` holds 4 practice files (2 resident, 2 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
 | [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
-| [small-calls](practices/small-calls.md) | resident | a judgment call is needed to keep work moving |
+| [small-calls](practices/small-calls.md) | on-demand | a judgment call is needed to keep work moving |
 
 ## Withdrawn practices
 
