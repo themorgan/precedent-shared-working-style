@@ -13,7 +13,7 @@ own**, and a repo may declare several team sets — see
 
 <!-- Regenerate with: python3 tools/build_views.py -- do not hand-edit this block; `python3 tools/build_views.py --check` exits non-zero on drift. -->
 
-## Resident block (~351 of 2000 token budget, 2 of 4 practices)
+## Resident block (~351 of 425 token budget, 2 of 4 practices)
 
 **default-register.** **The register of a reply belongs to the person reading it, so take it from their own declaration wherever they have made one.** A register is a fact about a person, the same shape as their timezone: it is theirs to state, and nothing at team level should be overriding it. Where the person you are working with declares their own register -- their individual practice set is where they do it -- that declaration governs, and this rule steps aside.
 
@@ -46,5 +46,19 @@ Before starting work of a kind named in the occasion index above, run `python3 t
   [GLOSSARY.md](GLOSSARY.md) alongside it. Never hand-edit it.
 - **Before committing:** `python3 tools/precedent_check.py` — what matters
   is `0 violated`, never the passed or skipped count.
+- **The hand-written half of this file describes the MECHANISM, never the
+  INVENTORY.** `MAP.md` and `GLOSSARY.md` are generated top to bottom, but
+  this file is the one mixed file in the repo — the generator owns only what
+  sits between the `BEGIN GENERATED`/`END GENERATED` markers, and `--check`
+  compares only that. So prose outside the markers can contradict the block
+  inside them with every check still green, which is what happened here on
+  2026-09-11: the opening paragraph said "Most of it is `tier: resident`"
+  while the block twelve lines below said `2 of 4 practices`. Describing how
+  the two loading channels work is safe — that stays true until the engine
+  changes. Describing what is currently in the set is not: which practices
+  are resident, how many, what proportion, what `applies_to` covers. All of
+  that is generated a few lines down, and restating it creates a second copy
+  that only a person can keep true. Nothing mechanical catches this; that is
+  the whole point of the rule.
 - **Approval** is a listed approver's own yes, in
   [approvers.json](approvers.json).
