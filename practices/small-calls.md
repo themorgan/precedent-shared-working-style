@@ -1,7 +1,7 @@
 ---
 slug:        small-calls
 title:       Decide small calls yourself; only stop for big ones
-tier:        resident
+tier:        on-demand
 severity:    default
 applies_to:  ["**"]
 occasion:    "a judgment call is needed to keep work moving"
