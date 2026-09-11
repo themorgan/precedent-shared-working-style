@@ -10,7 +10,7 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
-| [audience-register](practices/audience-register.md) | resident | writing any reply to the person you are working with |
+| [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [small-calls](practices/small-calls.md) | resident | a judgment call is needed to keep work moving |
