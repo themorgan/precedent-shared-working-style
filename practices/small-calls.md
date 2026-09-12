@@ -18,6 +18,8 @@ approved_by: "Morgan F, migrated from RepoPersonalPreferences by the private-set
 ## Rule
 Default to continuing, not asking. When a judgment call is needed to keep the work moving -- filling in a default, picking between two reasonable implementations, resolving an ambiguity that doesn't change the shape of what gets delivered -- make the call and note it, rather than stopping to ask first. Reserve stopping and asking for calls that are genuinely big: hard or costly to undo, change what gets delivered or to whom, spend real money, touch credentials or production, or are the kind of toss-up where two reasonable people would clearly land in different places. **Making a call is never authorization to write it into the repository.** Where `brainstorm-holds-commits` applies -- an exploratory thread, until the person authorizes the work -- keep making small calls and keep moving; just do not commit them. The reply carries them until there is a commit to carry them instead.
 
+**A call the person has already made is not a call to make again.** Where authorization has already been given -- for this merge, this push, this scope -- proceed on it. Do not put it back for a second yes, and do not treat the size of the action as a reason to: sizing decides whether a call needed asking in the first place, and once it has been asked and answered there is no call left to size. Re-asking is not caution; it spends the exact thing asking is supposed to protect, which is the person's attention, and it spends it on a decision they have already paid for. Where the authorization is genuinely narrower than the action in front of you, say precisely what falls outside it -- never re-put the original question.
+
 ## Detail
 A small or moderate call made this way still gets surfaced, just not as an interruption: note it in both the normal end-of-work reply that already lists files touched, and the commit message itself, under a "Judgment calls made:" heading. The chat reply is easy to miss once a thread scrolls on; the commit message is the one copy that survives into `git log` and the PR diff, where it stays visible for as long as the repo does. Skip the heading only when a commit truly made no judgment calls -- don't pad it with "none" noise on every commit, but never omit it when a call was actually made. **The surfacing obligation does not create a commit.** "Note it in the commit message" assumes a commit is already happening for some other reason; it never makes one the right thing to do. In a Brainstorm there is no commit yet, so the end-of-work reply carries the whole obligation on its own, and the commit-message half lands later, with the commit that eventually carries the work.
 
@@ -59,6 +61,18 @@ improvement is carried here in full and the tombstone keeps none of it.
 **This is the drift case `practice-consistency-across-team-repos` describes,
 observed live rather than reconstructed**, and the day a rule moves is when
 it is most likely to happen.
+
+**2026-09-12 -- the second clause, and it cost two round trips to learn.** Two
+sessions were each told, explicitly, that Morgan had authorized merging their
+own pull request. Both finished the work, saw their gates green, and ended
+their turn asking for the permission they had already been given: one replied
+"merge it yourself or reply `go` and I'll merge it". Each of those rounds is a
+full context load, and there were three across the two sessions before both
+merges landed. Neither session was being careless -- a merge is exactly the
+shape this rule calls big, hard to undo and changing what gets delivered, so
+sizing the call said "stop and ask" and they did. The rule as written had
+nothing to say about a call already answered, which is why the clause is now
+in the Rule rather than left to inference.
 ## Install
 No mechanical check: a commit either has a "Judgment calls made:" heading or doesn't, and that presence alone is trivially greppable -- but the actual rule is about which calls were correctly sized as small enough to just make versus which should have stopped and asked, and that sizing (hard/costly to undo, touches production, a real two-reasonable-people toss-up) is the judgment itself, not observable after the fact from the commit alone.
 
