@@ -6,3 +6,8 @@ __pycache__/
 # identity.json and stores it here), so it is never the same on two
 # checkouts and must not be committed.
 .claude/settings.local.json
+# Written at session start by tools/precedent_session_practices.py: the
+# practices in force here from the sources this set declares. NEVER commit
+# it -- it is another repository's practice text, and a committed copy is a
+# copy that goes stale.
+.precedent/
