@@ -48,7 +48,7 @@ the diff, where somebody reviewing a merged pull request later can still see
 what was decided on their behalf. The heading is skipped on a commit that
 genuinely made no calls, rather than padded with "none" on every commit.
 
-**Moved to `precedent-team-working-style` on 2026-09-09**, from `precedent-team-maintainers`, in the subject split recorded at Precedent's `TODO.md#split-team-sets-by-subject`. The rule governs how a session works alongside the person it is working with -- any work, any team -- and it was reachable only by repositories that declared the maintainers' set. Two of the three rules moved here are `tier: resident`, so they fire on every turn of every session: the reach lost while they sat behind a repo-mechanics set is the whole reason this one exists. The copy left behind is `status: deduplicated` and points here; nothing was deleted and the rule was never out of force (`spec/MOVING_PRACTICES.md`, land first, deduplicate second).
+**Moved to `precedent-team-working-style` on 2026-09-09**, from `precedent-team-maintainers`, in the subject split recorded in BestPractice's own history (2026-09-09) -- its TODO.md has since moved that content into per-item files, so the old anchor no longer resolves. The rule governs how a session works alongside the person it is working with -- any work, any team -- and it was reachable only by repositories that declared the maintainers' set. Two of the three rules moved here are `tier: resident`, so they fire on every turn of every session: the reach lost while they sat behind a repo-mechanics set is the whole reason this one exists. The copy left behind is `status: deduplicated` and points here; nothing was deleted and the rule was never out of force (`spec/MOVING_PRACTICES.md`, land first, deduplicate second).
 
 
 **Carried from `precedent-team-maintainers` on 2026-09-09**, hours after this
@@ -75,4 +75,3 @@ nothing to say about a call already answered, which is why the clause is now
 in the Rule rather than left to inference.
 ## Install
 No mechanical check: a commit either has a "Judgment calls made:" heading or doesn't, and that presence alone is trivially greppable -- but the actual rule is about which calls were correctly sized as small enough to just make versus which should have stopped and asked, and that sizing (hard/costly to undo, touches production, a real two-reasonable-people toss-up) is the judgment itself, not observable after the fact from the commit alone.
-
