@@ -43,5 +43,11 @@
       "name": "precedent",
       "path": "../BestPractice"
     }
+  ],
+  "not_binding": [
+    {
+      "slug": "todo-gotcha-stale-reference",
+      "reason": "SOURCE_CHECK_AUDIT_FINDINGS.md:126 cites BestPractice TODO item 52 by number -- a historical audit record of what was true on 2026-09-10, not a live citation this repo owns or should rewrite to match a later-added convention. This set keeps no TODO.md of its own."
+    }
   ]
 }
