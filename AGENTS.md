@@ -1,6 +1,6 @@
 # Repository notes for agents
 
-This repo IS `precedent-team-working-style` — a **team** source for
+This repo IS `precedent-shared-working-style` — a **shared** source for
 [Precedent](https://github.com/alex137/BestPractice/tree/precedent-beta-v01),
 named for a **subject** rather than for a roster. Its subject is **how a session works alongside the person it is working with**: deciding small calls rather than stopping for them, keeping going on everything an open question does not touch, and not repeating the same disclaimer every run. It loads on two channels: its `tier: resident` practices are carried in the block below and fire on every turn, and the rest sit in that block's occasion index, pulled in by the standing instruction when their occasion comes up.
 

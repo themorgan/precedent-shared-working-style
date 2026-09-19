@@ -45,13 +45,13 @@
     },
     {
       "level": "shared",
-      "name": "precedent-team-repo-maintenance",
-      "path": "../precedent-team-repo-maintenance"
+      "name": "precedent-shared-repo-maintenance",
+      "path": "../precedent-shared-repo-maintenance"
     },
     {
       "level": "shared",
-      "name": "precedent-team-writing",
-      "path": "../precedent-team-writing"
+      "name": "precedent-shared-writing",
+      "path": "../precedent-shared-writing"
     }
   ],
   "not_binding": [
