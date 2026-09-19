@@ -6,10 +6,12 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 5 practice files (2 resident, 3 on-demand). One file per practice.
+`practices/` holds 7 practice files (2 resident, 5 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
+| [buenos-aires-dates](practices/buenos-aires-dates.md) | on-demand | writing a date or timestamp anywhere |
+| [commit-author](practices/commit-author.md) | on-demand | making the first commit in a fresh clone or session |
 | [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |

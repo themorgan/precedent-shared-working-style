@@ -59,5 +59,62 @@
       "slug": "todo-gotcha-stale-reference",
       "reason": "SOURCE_CHECK_AUDIT_FINDINGS.md:126 cites BestPractice TODO item 52 by number -- a historical audit record of what was true on 2026-09-10, not a live citation this repo owns or should rewrite to match a later-added convention. This set keeps no TODO.md of its own."
     }
+  ],
+  "_commit_author_check_comment": [
+    "check_commit_author.py and check_buenos_aires_dates.py were vendored",
+    "into this repo (tools/checks/, practices/) on 2026-09-19. precedent-",
+    "individual is deliberately NOT added to the `sources` list above --",
+    "build_views refuses that outright: naming an individual source in a",
+    "shared repo's tracked config would leak its existence and location to",
+    "anyone who reads the repo. Identity resolves correctly anyway, via the",
+    "untracked ~/.config/precedent/config.json, a mechanism entirely",
+    "separate from this file's `sources` (which is only for practice TEXT",
+    "reaching this repo's generated views)."
+  ],
+  "grandfathered_commit_shas": [
+    {
+      "sha": "01a272652dcc395d08603a5e9d8758dbcc9198b2",
+      "note": "'Record the 2026-09-10 source-check audit: this set supplies no checks', 2026-09-10 16:28:31 -0400. Author correctly Morgan F <morgan@westegg.com>; only check_buenos_aires_dates.py trips, on a -0400 (US Eastern) offset rather than -0300. Neither check was vendored into this repo until 2026-09-19 (see _commit_author_check_comment above), so every entry in this list predates the check's own existence here. Same day and same -0400 pattern as precedent-team-writing's and precedent-team-repo-maintenance's own 2026-09-10 entries. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "889deb84c8b66584404443c81b998ecc100af5bb",
+      "note": "'Record Morgan's approval of this change, marked assented and scoped to it alone', 2026-09-10 17:22:48 -0400. Same cause as the entry above. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "af32e63b6aadca03a151529900a2c8ddef5f41c1",
+      "note": "'Correct the four stale entries in README's \"What's here\" table', 2026-09-10 17:25:54 -0400. Same cause as the two entries above. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "b8b12c10496c8e1e75226d0e1bb3fb445ef5b4c9",
+      "note": "'Record Morgan's separate approval of this README correction', 2026-09-10 17:30:47 -0400. Same cause as the three entries above. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "f16fa8159740adc587c84d8de03d06879a610e74",
+      "note": "'Bring audience-register here from precedent-team-tms', 2026-09-10 21:22:39 -0400. Same cause, a later session the same day. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "89cd3f40c00a369cca755ab15e1ae2bed0092672",
+      "note": "'Record Morgan's approval of this move in the practice's Story', 2026-09-10 21:23:15 -0400. Same cause as the entry above, thirty-six seconds later. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "3494947183855c36832b4dbe64bfc5a6ad10f4b4",
+      "note": "'Rescope audience-register to a default, renamed default-register', 2026-09-10 21:55:02 -0400. Same cause as the two entries above. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "a46f642a1f36f4a1a013d349eb0ce23fc4d29032",
+      "note": "'Expand TMS in default-register's Story', 2026-09-10 21:59:50 -0400. Last of the eight-commit 2026-09-10 batch (with the seven entries above), all under a -0400 clock rather than -0300. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "f5347696edbd3afc2d0ae64d3c93c4d3c5e4c6c9",
+      "note": "'Add mutual shared-level sources between the four practice packs', 2026-09-19 10:11:45 -0300, pushed straight to main. Author `Claude <noreply@anthropic.com>` instead of the declared identity -- offset already -0300, so only check_commit_author.py trips. The same change, same session and same minute, is grandfathered as e5cd3130 in precedent-individual's identity.json, 5db442aa in precedent-team-writing's precedent.json, and 622da99f in precedent-team-repo-maintenance's precedent.json -- see e5cd3130's note for the full incident. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "5a603284db0b279d4bb9acb095d7a579dab29949",
+      "note": "'Restrict CI push trigger to main, tighten debounce to 30 minutes', 2026-09-19 16:04:13 +0000, pushed straight to main. Author `Claude <noreply@anthropic.com>`, offset +0000 -- both checks trip. Parallels 311fb188 in precedent-individual, a784f089 in precedent-team-writing, and 0e85c4ba in precedent-team-repo-maintenance -- same session, same incident. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    },
+    {
+      "sha": "73d2da33975baa7dfce658283f2e169803e48bf7",
+      "note": "'Add pull_request trigger alongside push: branches: [main]', 2026-09-19 16:45:20 +0000, pushed straight to main. Same session and cause as the entry above, forty minutes later. Parallels 14a51800 in precedent-individual, 825726ea in precedent-team-writing, and f45787fb in precedent-team-repo-maintenance. Already on main; exempted rather than rewritten (no-rewrite-for-warnings)."
+    }
   ]
 }
