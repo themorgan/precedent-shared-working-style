@@ -52,8 +52,10 @@
     "schedule, this file is the cheap approximation of it.",
     "",
     "surfaces below is the SECOND, different budget: whole always-loaded",
-    "FILES rather than the resident block inside one. AGENTS.md is the only",
-    "such surface this repo has (no CLAUDE.md, no .precedent/).",
+    "FILES rather than the resident block inside one. AGENTS.md and",
+    "CLAUDE.md are the surfaces this repo has (no .precedent/ -- see the",
+    "session-start-hook -> additionalContext channel note in",
+    "spec/PACK_SESSION_DOES_NOT_LOAD_UNIVERSAL.md in BestPractice).",
     "",
     "IT IS DECLARED BUT NOT CURRENTLY CHECKED HERE, and saying so is the",
     "point of writing it down. precedent_check.py reads surfaces only when",
@@ -76,6 +78,10 @@
     "AGENTS.md": {
       "ceiling": 1000,
       "_note": "~832 tokens on 2026-09-11. Ceiling is current + ~20%. Most of the file is the generated loader block; the hand-written half is the repo notes above and below it."
+    },
+    "CLAUDE.md": {
+      "ceiling": 200,
+      "_note": "111 tokens on 2026-09-20, the day the file was added -- the Claude Code adapter stub (@AGENTS.md include plus its explanatory comment), from templates/harness/claude-code/CLAUDE.md in BestPractice. Ceiling matches BestPractice's own CLAUDE.md surface entry, used as the model here."
     }
   }
 }
