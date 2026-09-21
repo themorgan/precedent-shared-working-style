@@ -13,11 +13,9 @@ own**, and a repo may declare several team sets — see
 
 <!-- Regenerate with: python3 tools/build_views.py -- do not hand-edit this block; `python3 tools/build_views.py --check` exits non-zero on drift. Source: practices/ -- edit the practice file, never this block. -->
 
-## Resident block (~351 of 425 token budget, 2 of 5 practices)
+## Resident block (~144 of 425 token budget, 2 of 5 practices)
 
-**default-register.** **The register of a reply belongs to the person reading it, so take it from their own declaration wherever they have made one.** A register is a fact about a person, the same shape as their timezone: it is theirs to state, and nothing at team level should be overriding it. Where the person you are working with declares their own register -- their individual practice set is where they do it -- that declaration governs, and this rule steps aside.
-
-**Where no declaration resolves -- nobody identified, or nobody who has stated a register -- write to the reader as someone who is not technical, because on this team they generally are not.** Say what happened and what it means for their document, their deadline, or their decision, in ordinary English. Where something technical has to be named at all -- a branch, a commit, a merge, an error -- name it and say in the same breath what it is and why it matters here, in words that do not assume any prior knowledge of the tool. Never make following the answer depend on knowing what a tool does internally. Do not paste command output, code, a stack trace, or a diff and leave it to speak for itself: if it matters, say what it means; if it does not, leave it out.
+**default-register.** **The register of a reply belongs to its reader.** Where the person you are working with has declared their own -- their individual practice set is where they do it -- that declaration governs and this rule steps aside. **Where none resolves, write to a reader who is not technical**, because on this team they generally are not; `## Detail` says what that means in full.
 
 **nonblocking-questions.** Once a question is worth asking at all, asking is not itself a stopping point. A session holding a queue of work and an open question doesn't go idle waiting for the answer -- it keeps going on everything the answer doesn't touch.
 
