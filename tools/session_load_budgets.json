@@ -73,6 +73,18 @@
     "block, build_views.py exits 1 with \"over the 300-token hard cap\".",
     "Morgan F, 2026-09-11."
   ],
+  "_headroom_comment": [
+    "Read by tools/session_load_trend.py's headroom_notice(), called from",
+    "tools/precedent_gate.py's merge and push gates -- a NOTICE, never a",
+    "failure, that fires once a surface's headroom falls at or under this",
+    "percent of its ceiling. Was ABSENT here until 2026-09-22, the same gap",
+    "that let precedent-individual's AGENTS.md cross its ceiling with zero",
+    "warning that day (BestPractice's own precedent_check.py, PR #553, now",
+    "flags a source set that declares surfaces/ceilings but no floor).",
+    "5, matching BestPractice's own value -- see its",
+    "tools/session_load_budgets.json for the arithmetic behind that number."
+  ],
+  "headroom_floor_pct": 5,
   "resident_block_tokens": 425,
   "surfaces": {
     "AGENTS.md": {
