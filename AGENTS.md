@@ -13,7 +13,7 @@ own**, and a repo may declare several team sets — see
 
 <!-- Regenerate with: python3 tools/build_views.py -- do not hand-edit this block; `python3 tools/build_views.py --check` exits non-zero on drift. Source: practices/ -- edit the practice file, never this block. -->
 
-## Resident block (~144 of 425 token budget, 2 of 5 practices)
+## Resident block (~144 of 425 token budget, 2 of 4 practices)
 
 **default-register.** **The register of a reply belongs to its reader.** Where the person you are working with has declared their own -- their individual practice set is where they do it -- that declaration governs and this rule steps aside. **Where none resolves, write to a reader who is not technical**, because on this team they generally are not; `## Detail` says what that means in full.
 
@@ -22,8 +22,6 @@ own**, and a repo may declare several team sets — see
 ## Occasion index
 
 ```
-When a judgment call is needed to keep work moving:
-  small-calls — make small calls yourself; note them; stop only for big ones
 When finishing a task a session was spawned or triggered to do:
   report-up-the-chain — report to whoever tasked you; noticed work goes up the chain, never out as a proposal
 When reporting a check's outcome that includes a known pre-existing backlog:

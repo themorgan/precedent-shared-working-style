@@ -9,7 +9,8 @@ gates:       []
 index_clause: "make small calls yourself; note them; stop only for big ones"
 checked_by:  null
 defines:     []
-status:      active
+status:      deduplicated
+in_force_at: small-calls
 supersedes:  []
 overrides:   null
 added:       2026-08-31
@@ -73,5 +74,8 @@ shape this rule calls big, hard to undo and changing what gets delivered, so
 sizing the call said "stop and ask" and they did. The rule as written had
 nothing to say about a call already answered, which is why the clause is now
 in the Rule rather than left to inference.
+
+**Deduplicated on 2026-09-22**: now in force from the universal catalogue, as [`small-calls`](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/small-calls.md). That copy landed on 2026-09-19 and its own `approved_by:` records the intent -- "moved from the shared set precedent-team-working-style" -- but only the landing half of the move happened, so both copies stood `status: active` with byte-identical Rule, Detail, Why and Story for three days. Precedence is shared over universal, so the copy that actually resolved in any repo declaring this set was this one, and the universal copy the occasion index advertises won nowhere. Found by BestPractice's 2026-09-21 very deep check, in [pass 3](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/todo/todo-2026-09-21-pass-3-coherence-read-findings.md) (finding A2), which is where the remedy applied here is written down. Approved by Morgan F, 2026-09-22, to complete the move. `spec/MOVING_PRACTICES.md` for why this is a deduplication and not a retirement -- the rule is fully in force, only the redundant copy went.
+
 ## Install
 No mechanical check: a commit either has a "Judgment calls made:" heading or doesn't, and that presence alone is trivially greppable -- but the actual rule is about which calls were correctly sized as small enough to just make versus which should have stopped and asked, and that sizing (hard/costly to undo, touches production, a real two-reasonable-people toss-up) is the judgment itself, not observable after the fact from the commit alone.

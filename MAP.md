@@ -6,7 +6,7 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 5 practice files (2 resident, 3 on-demand). One file per practice.
+`practices/` holds 4 practice files (2 resident, 2 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
@@ -14,11 +14,14 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [report-up-the-chain](practices/report-up-the-chain.md) | on-demand | finishing a task a session was spawned or triggered to do |
-| [small-calls](practices/small-calls.md) | on-demand | a judgment call is needed to keep work moving |
 
 ## Withdrawn practices
 
-None. No practice in this catalogue has been retired or deduplicated yet -- when one is, its file stays and it is listed here.
+1 practice file(s) here are **not in force** and are left out of every table above. **The files are kept on purpose** -- a withdrawn rule and the argument against it are worth re-reading, and `retired` is not a synonym for deleted (that is `decommission-deletes-files`, and it is about mechanisms, not rules). Read one in full with `python3 tools/precedent_show.py SLUG`.
+
+| Practice | Status | Now in force at | Why it was withdrawn |
+|---|---|---|---|
+| [small-calls](practices/small-calls.md) | deduplicated | [small-calls](practices/small-calls.md) | Migrated here from RepoPersonalPreferences by the phase-3 private-set migration. |
 
 ## The engine
 
