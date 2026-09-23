@@ -13,7 +13,17 @@ own**, and a repo may declare several team sets — see
 
 <!-- Regenerate with: python3 tools/build_views.py -- do not hand-edit this block; `python3 tools/build_views.py --check` exits non-zero on drift. Source: practices/ -- edit the practice file, never this block. -->
 
-## Resident block (~144 of 425 token budget, 2 of 6 practices)
+## Resident block (~305 of 425 token budget, 3 of 8 practices)
+
+**answer-first-ask-before-long-work.** Three parts. **(1) Answer the easy questions in a message before starting
+anything long** — in the same turn; the long run never gates the answer.
+**(2) A task that will run longer than a few minutes is proposed, not
+started:** what it is, how long from the tool's own cost line, what it
+blocks and what it does not, then the go-ahead. The exceptions are the
+checks a commit needs on the files the turn touched, and a run already
+asked for by name. **(3) When idle on a wait, say what the wait is for,
+what it will change, and how to stop it** — never a bare "still running".
+A background task nobody asked for is stopped, not waited on.
 
 **default-register.** **The register of a reply belongs to its reader.** Where the person you are working with has declared their own -- their individual practice set is where they do it -- that declaration governs and this rule steps aside. **Where none resolves, write to a reader who is not technical**, because on this team they generally are not; `## Detail` says what that means in full.
 
@@ -22,6 +32,8 @@ own**, and a repo may declare several team sets — see
 ## Occasion index
 
 ```
+When a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict:
+  their-constraints-are-given — their own situation is given -- say it once, then work from theirs
 When creating a repo's content/ directory, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system:
   assorted-notes — a default content/ASSORTED_NOTES.md holds ideas never cited elsewhere (a plain listing link is fine)
 When finishing a task a session was spawned or triggered to do:
