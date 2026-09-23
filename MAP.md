@@ -6,14 +6,18 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 4 practice files (2 resident, 2 on-demand). One file per practice.
+`practices/` holds 8 practice files (3 resident, 5 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
+| [answer-first-ask-before-long-work](practices/answer-first-ask-before-long-work.md) | resident | a turn that could start a computation, search or build lasting longer than a few minutes |
+| [assorted-notes](practices/assorted-notes.md) | on-demand | creating a repo's content/ directory, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system |
+| [content-directory](practices/content-directory.md) | on-demand | laying out a repo's root directory, or a root that's grown crowded with agent/tooling files |
 | [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [report-up-the-chain](practices/report-up-the-chain.md) | on-demand | finishing a task a session was spawned or triggered to do |
+| [their-constraints-are-given](practices/their-constraints-are-given.md) | on-demand | a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict |
 
 ## Withdrawn practices
 

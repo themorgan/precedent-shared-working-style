@@ -76,8 +76,8 @@
   "resident_block_tokens": 425,
   "surfaces": {
     "AGENTS.md": {
-      "ceiling": 1000,
-      "_note": "~832 tokens on 2026-09-11. Ceiling is current + ~20%. Most of the file is the generated loader block; the hand-written half is the repo notes above and below it."
+      "ceiling": 1600,
+      "_note": "Raised 2026-09-23 to 1,346 (measured) + ~20%, after a cross-repo practice-placement review moved 4 practices in (answer-first-ask-before-long-work, their-constraints-are-given, assorted-notes, content-directory) -- this set was genuinely thin (2 of 4 practices) and the old 1000 ceiling was sized for that. Re-derived per this file's own instruction above ('re-derive the split whenever a source is added'), not raised to silence the check. Was ~832 tokens on 2026-09-11, ceiling 1000 then."
     },
     "CLAUDE.md": {
       "ceiling": 200,
