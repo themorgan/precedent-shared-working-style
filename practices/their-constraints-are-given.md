@@ -36,7 +36,7 @@ received as an argument the person has already won and has to win again.
 
 ## Detail
 
-**This is not [push-back](push-back.md), and the line between them is the
+**This is not [push-back](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/push-back.md), and the line between them is the
 whole point.** Push-back is about the *content of the work* — a stance, a
 framing, an argument the deliverable is making — where a real counter-case
 is owed and welcome. This rule is about *the person's own circumstances*,
@@ -59,7 +59,7 @@ information and calling it analysis.
 fresh, re-reads the same data, and re-derives the same correction, which
 feels novel to it and repetitive to them. Nobody is being careless. That
 is exactly why the fix cannot be "try to remember" and has to be
-[repo-is-memory](repo-is-memory.md): **a settled premise belongs in a
+[repo-is-memory](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/repo-is-memory.md): **a settled premise belongs in a
 committed file**, where the next session reads it before it re-derives
 anything.
 
@@ -149,4 +149,4 @@ routes it — `python3 tools/precedent_show.py their-constraints-are-given`.
 **Where a premise is settled for good, write it into the repository** so
 the next session reads it rather than re-deriving it: a line in the
 project's instructions file, or an open item recording the decision and
-its strength ([decision-strength](decision-strength.md)).
+its strength ([decision-strength](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/decision-strength.md)).

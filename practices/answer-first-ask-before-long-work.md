@@ -83,8 +83,8 @@ the same day, Morgan F: stays universal, `tier: resident`, as before.
 Adopt the rule in the working-conventions file and name the cost-line
 convention it depends on (every heavy tool prints its estimated duration
 before it runs; see
-[slow-steps-report-and-cache](slow-steps-report-and-cache.md) for the
+[slow-steps-report-and-cache](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/slow-steps-report-and-cache.md) for the
 progress line and the memo, and
-[scripts-assert-properties](scripts-assert-properties.md) for the
+[scripts-assert-properties](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/scripts-assert-properties.md) for the
 model-side discipline). A wait longer than a minute reports elapsed and
 remaining time on its own.
