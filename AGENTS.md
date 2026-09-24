@@ -62,8 +62,9 @@ whole on 2026-09-22.
 - **Regenerate the block above** with `python3 tools/build_views.py` after
   any practice change; it rebuilds [MAP.md](MAP.md) and
   [GLOSSARY.md](GLOSSARY.md) alongside it. Never hand-edit it.
-- **Before committing:** `python3 tools/precedent_check.py` — `0 violated`
-  is what matters. **There is no CI here** --
+- **Before committing:** `python3 tools/precedent_check.py --full-sweep` —
+  `0 violated` is what matters. **Never the bare command**: it reaches most
+  of this set's checks only one commit in ten. **There is no CI here** --
   [why](spec/WORKING_IN_THIS_REPO.md#the-check-and-why-there-is-no-ci).
 - **The hand-written half of this file describes the MECHANISM, never the
   INVENTORY** -- restating what's currently in force creates a second copy

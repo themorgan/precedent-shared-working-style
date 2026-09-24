@@ -15,7 +15,7 @@ silently off the whole time. Both landed the same day.
 
 ## The check, and why there is no CI
 
-**Before committing:** `python3 tools/precedent_check.py` — what matters is
+**Before committing:** `python3 tools/precedent_check.py --full-sweep` — what matters is
 `0 violated`, never the passed or skipped count. **Nothing else runs it, on
 any branch.** This repo carried a `precedent-check.yml` workflow from
 2026-09-14; on 2026-09-21 the vendored engine deleted it on refresh, because
@@ -24,6 +24,13 @@ a practice source installs no CI at all — universal's
 running two workflows each were 127 of 143 billed minutes in one day. So
 there is no after-the-push gate here any more, and none of the older ones is
 coming back: the check runs before the push, or it does not run.
+
+**Why `--full-sweep`, added 2026-09-24.** Bare, the check runs only what
+the diff routes to plus a one-in-ten rotation, and a check whose practice
+applies to `**` -- most of this set's -- is reached only by the rotation. In
+a sibling set that let two links to a private repo, added 2026-09-23, sit
+on `main` past a clean bare run until a sweep found them the next day. The
+sweep takes about five seconds.
 
 ## Mechanism, never inventory
 
