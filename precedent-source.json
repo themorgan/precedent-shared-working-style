@@ -1,7 +1,7 @@
 {
   "name": "precedent-shared-working-style",
   "level": "shared",
-  "visibility": "private",
+  "visibility": "public",
   "subject": "how a session paces work with the person",
   "code": [],
   "_comment": [
