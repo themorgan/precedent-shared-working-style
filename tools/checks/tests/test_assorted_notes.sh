@@ -27,8 +27,8 @@ trap 'rm -rf "$SCRATCH"' EXIT
 
 git clone -q "$ROOT" "$SCRATCH"
 cd "$SCRATCH"
-git config user.name "Morgan F"
-git config user.email "morgan@westegg.com"
+git config user.name "Fixture Author"
+git config user.email "fixture@example.com"
 mkdir -p content
 echo "whatever is on my mind" > content/ASSORTED_NOTES.md
 mkdir -p docs
@@ -47,8 +47,8 @@ SCRATCH2="$(mktemp -d)"
 git clone -q "$ROOT" "$SCRATCH2"
 (
   cd "$SCRATCH2"
-  git config user.name "Morgan F"
-  git config user.email "morgan@westegg.com"
+  git config user.name "Fixture Author"
+  git config user.email "fixture@example.com"
   mkdir -p content
   echo "marketing copy" > content/MARKETING_IDEAS.md
   echo "loose thoughts" > content/RANDOM_NOTES.md
@@ -76,8 +76,8 @@ SCRATCH3="$(mktemp -d)"
 git clone -q "$ROOT" "$SCRATCH3"
 (
   cd "$SCRATCH3"
-  git config user.name "Morgan F"
-  git config user.email "morgan@westegg.com"
+  git config user.name "Fixture Author"
+  git config user.email "fixture@example.com"
   mkdir -p content
   echo "whatever is on my mind" > content/ASSORTED_NOTES.md
   cat > README.md <<'EOF'
@@ -111,8 +111,8 @@ SCRATCH4="$(mktemp -d)"
 git clone -q "$ROOT" "$SCRATCH4"
 (
   cd "$SCRATCH4"
-  git config user.name "Morgan F"
-  git config user.email "morgan@westegg.com"
+  git config user.name "Fixture Author"
+  git config user.email "fixture@example.com"
   mkdir -p content
   echo "whatever is on my mind" > content/ASSORTED_NOTES.md
   cat > docs-page.md <<'EOF'
