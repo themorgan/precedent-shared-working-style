@@ -58,7 +58,7 @@ before anything else.
 
 
 **Rule compressed 2026-09-21**, in the reduction pass recorded in
-[todo-2026-09-21-resident-cap-was-measured-on-the-wrong-shape.md](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/todo/todo-2026-09-21-resident-cap-was-measured-on-the-wrong-shape.md).
+[todo-2026-09-21-resident-cap-was-measured-on-the-wrong-shape.md](https://github.com/alex137/BestPractice/blob/staging/todo/todo-2026-09-21-resident-cap-was-measured-on-the-wrong-shape.md).
 208 tokens -> 124. All three parts stayed; what moved into `## Detail` is
 the pair of definitions the Rule was carrying inline -- what counts as an
 easy question, and the four examples of a long task. The exceptions stayed
@@ -83,8 +83,8 @@ the same day, Morgan F: stays universal, `tier: resident`, as before.
 Adopt the rule in the working-conventions file and name the cost-line
 convention it depends on (every heavy tool prints its estimated duration
 before it runs; see
-[slow-steps-report-and-cache](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/slow-steps-report-and-cache.md) for the
+[slow-steps-report-and-cache](https://github.com/alex137/BestPractice/blob/staging/practices/slow-steps-report-and-cache.md) for the
 progress line and the memo, and
-[scripts-assert-properties](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/scripts-assert-properties.md) for the
+[scripts-assert-properties](https://github.com/alex137/BestPractice/blob/staging/practices/scripts-assert-properties.md) for the
 model-side discipline). A wait longer than a minute reports elapsed and
 remaining time on its own.

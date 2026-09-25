@@ -66,7 +66,7 @@ all"* -- sole approver in `approvers.json`, so the instruction is the
 approval. strength: decided.
 
 ## Install
-Nothing to install -- a team practice is resolved live from this repo by Precedent's own [`tools/precedent_resolve.py`](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/tools/precedent_resolve.py), once a consuming project declares this repo as a `"level": "team"` source in its own `precedent.json`. The practice is `tier: resident`, so it arrives in the loader block of every session in such a project rather than waiting on an occasion.
+Nothing to install -- a team practice is resolved live from this repo by Precedent's own [`tools/precedent_resolve.py`](https://github.com/alex137/BestPractice/blob/staging/tools/precedent_resolve.py), once a consuming project declares this repo as a `"level": "team"` source in its own `precedent.json`. The practice is `tier: resident`, so it arrives in the loader block of every session in such a project rather than waiting on an occasion.
 
 No mechanical check. The rule's subject is the wording of a reply to a person, and a reply is not an artifact this repo holds: nothing in the tree, in a commit, or in a diff can tell a correctly pitched reply from a badly pitched one. The evidence lives only in the conversation itself, and even there "is this plain enough" is a judgment about wording rather than a signature a script could match without firing on correct work.
 
