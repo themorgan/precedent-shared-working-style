@@ -52,7 +52,7 @@
     {
       "level": "universal",
       "name": "precedent",
-      "path": "../BestPractice"
+      "path": "../precedent"
     },
     {
       "level": "shared",
