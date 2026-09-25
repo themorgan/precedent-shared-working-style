@@ -7,7 +7,7 @@
 
 **Renamed 2026-09-19 from `precedent-team-working-style`** — the `team`
 level itself was renamed `shared`; see
-[practices/source-naming.md](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/practices/source-naming.md)'s
+[practices/source-naming.md](https://github.com/alex137/BestPractice/blob/staging/practices/source-naming.md)'s
 Story.
 
 This is **precedent-shared-working-style's own private space** — one per team, holding the
@@ -22,14 +22,14 @@ nobody else can.
 | [`practices/`](practices/) | This set's practices, one file each: [`default-register.md`](practices/default-register.md), [`nonblocking-questions.md`](practices/nonblocking-questions.md), [`small-calls.md`](practices/small-calls.md) and [`quiet-checks.md`](practices/quiet-checks.md). All but `quiet-checks.md` are `tier: resident`, so they load on every turn in a project that declares this set. (`default-register.md` arrived on 2026-09-10 as `audience-register`, from `precedent-team-tms`, and was renamed the same day when its blanket form turned out to override each person's own declared register — see its `## Story`.) (`example-starter.md`, the placeholder this set was bootstrapped with, was deleted once these landed — which is what its own text asked for.) |
 | [`leak-blocklist.txt`](leak-blocklist.txt) | The private-term blocklist for Precedent's leak gate — client names, code words, anything that must never reach a public repo. Fill it in; see the file's own header for the format and the two environment/git settings that switch it on. |
 | [`SOURCE_CHECK_AUDIT_FINDINGS.md`](SOURCE_CHECK_AUDIT_FINDINGS.md) | The record of a 2026-09-10 audit asking whether this set ships check scripts carrying assumptions about how an adopting project is laid out. It ships none — the right answer for a set whose rules are matters of judgment — so the file is mostly a record of *how* that was established (four independent searches, not just a missing directory), written down so nobody repeats the pass. It also notes, without fixing, that this table is stale in three places. |
-| [`tools/`](tools/) | Precedent's vendored source-repo engine, tracked and present: `build_views.py` and its companion `glossary_terms.json`, `build_codeowners.py`, `precedent_check.py`, `precedent_decommission.py`, `precedent_gate.py`, `precedent_migrate_status.py`, `precedent_paths.py`, `precedent_show.py`, `split_practices.py`, a trimmed `routing_scope.json`, and `precedent_vendor_engine.py` itself. Never hand-edit these — [`tools/ENGINE_MANIFEST.json`](tools/ENGINE_MANIFEST.json) records the BestPractice commit and a sha256 per file, so a hand-edit is detected as drift and refused. Refresh with `python3 tools/precedent_vendor_engine.py refresh <bestpractice-clone>`; see [`spec/BOOTSTRAP_NEW_SOURCES.md`](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/spec/BOOTSTRAP_NEW_SOURCES.md#the-vendored-engine)'s "The vendored engine". |
+| [`tools/`](tools/) | Precedent's vendored source-repo engine, tracked and present: `build_views.py` and its companion `glossary_terms.json`, `build_codeowners.py`, `precedent_check.py`, `precedent_decommission.py`, `precedent_gate.py`, `precedent_migrate_status.py`, `precedent_paths.py`, `precedent_show.py`, `split_practices.py`, a trimmed `routing_scope.json`, and `precedent_vendor_engine.py` itself. Never hand-edit these — [`tools/ENGINE_MANIFEST.json`](tools/ENGINE_MANIFEST.json) records the BestPractice commit and a sha256 per file, so a hand-edit is detected as drift and refused. Refresh with `python3 tools/precedent_vendor_engine.py refresh <bestpractice-clone>`; see [`spec/BOOTSTRAP_NEW_SOURCES.md`](https://github.com/alex137/BestPractice/blob/staging/spec/BOOTSTRAP_NEW_SOURCES.md#the-vendored-engine)'s "The vendored engine". |
 
 ## Writing practices
 
 Each practice is one file under `practices/`, in Precedent's phase-1
 format — frontmatter plus `## Rule` / `## Detail` / `## Why` / `## Story` /
 `## Install`. The full spec is
-[Precedent's `spec/PRACTICE_FORMAT.md`](https://github.com/alex137/BestPractice/blob/precedent-beta-v01/spec/PRACTICE_FORMAT.md);
+[Precedent's `spec/PRACTICE_FORMAT.md`](https://github.com/alex137/BestPractice/blob/staging/spec/PRACTICE_FORMAT.md);
 [`practices/small-calls.md`](practices/small-calls.md) in this repo shows the shape directly.
 
 ## Approval
