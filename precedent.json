@@ -106,6 +106,15 @@
     "left to exempt once that check is gone. The 3 that also trip (or",
     "trip only) check_commit_author.py stay."
   ],
+  "_grandfathered_commit_shas_comment": [
+    "Kept as a record, not an exemption anything enforces. Since 2026-09-25 this",
+    "set vendors neither check_commit_author.py nor check_buenos_aires_dates.py",
+    "(both moved to the individual set), and the routine scope looks only at",
+    "commits not yet on a remote, so nothing here trips on these SHAs. The only",
+    "reader left is very_deep_check.py's IDENTITY REALITY section, which",
+    "subtracts them so an old, explained commit is not reported again. Noted",
+    "2026-09-28 by a very deep check."
+  ],
   "grandfathered_commit_shas": [
     {
       "sha": "f5347696edbd3afc2d0ae64d3c93c4d3c5e4c6c9",
