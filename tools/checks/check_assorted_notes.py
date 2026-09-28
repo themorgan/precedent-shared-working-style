@@ -17,7 +17,9 @@ filenames" (`doc-references-are-links`), takes the form of a markdown
 link whose target path ends in one of the recognized filenames. This
 check looks for exactly that: a markdown link `[...](...ASSORTED_NOTES.md)`
 (or a legacy name) outside the practice file, the notes file itself, any
-listing document, and any "## See also" section.
+listing document, and any "## See also" section -- and not a link whose own
+text is the file's name or path with no `#fragment`, which names the file
+rather than citing anything in it (see _names_the_file_itself).
 
 It cannot see a prose reference with no link ("see the notes file for
 why") -- that's a judgment call with no reliable mechanical signature,
@@ -198,6 +200,46 @@ EXEMPT_PATHS = {
     "tools/checks/tests/test_assorted_notes.sh",
 }
 
+def _names_the_file_itself(line: str, start: int, target: str, path: str) -> bool:
+    """Is this link a reference to the notes file AS A WHOLE?
+
+    True when the target carries no `#fragment` and the link's own text is
+    the file's name or path -- `[ASSORTED_NOTES.md](../ASSORTED_NOTES.md)`,
+    `[philosophy/ASSORTED_NOTES.md](../philosophy/ASSORTED_NOTES.md)`. That
+    is the same move as a listing: it says the file exists and where, and
+    cites nothing inside it. A citation reads differently -- "per [the
+    notes](...)" -- or points into the file with a fragment, and both still
+    fire.
+
+    WHY (2026-09-28). Run against the engine's own repository, this check
+    flagged a doc recipe that names the notes file as the one document its
+    rule does not reach, and a todo item recording where a file lives. Each
+    link's text was the file's own path; neither borrowed an idea from it.
+
+    The text is read back to the nearest `[` on the same line. A link whose
+    text wraps onto an earlier line has no text here, and is judged as it
+    always was.
+    """
+    if "#" in target:
+        return False
+    opening = line.rfind("[", 0, start)
+    if opening == -1:
+        return False
+    text = line[opening + 1:start].strip().strip("`").strip()
+    if not text or any(c.isspace() for c in text):
+        return False
+    bare = target.split()[0] if target.split() else target
+    if text in (bare, pathlib.PurePosixPath(bare).name):
+        return True
+    # A repo-rooted spelling of the same file ("philosophy/ASSORTED_NOTES.md"
+    # for a target of "../philosophy/ASSORTED_NOTES.md" from todo/) is its
+    # path too: resolve the target from the linking file and compare tails.
+    resolved = os.path.normpath(
+        os.path.join(os.path.dirname(path), bare)).replace(os.sep, "/")
+    text = text.removeprefix("./").removeprefix("/")
+    return resolved == text or resolved.endswith("/" + text)
+
+
 # A "## See also" section is a listing context too -- exempt lines inside
 # one, from its heading to the next "## " heading or end of file.
 # Case-insensitive: in a repo that declares `output_paths`,
@@ -266,6 +308,8 @@ def find_violations() -> list[str]:
             for m in LINK_RE.finditer(line):
                 target = m.group(1)
                 if pathlib.Path(target).name in notes_filenames():
+                    if _names_the_file_itself(line, m.start(), target, path):
+                        continue
                     findings.append(f"{path}:{lineno}: links to {target!r}")
     return findings
 
