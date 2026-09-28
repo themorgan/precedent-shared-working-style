@@ -5,15 +5,19 @@
 
 # precedent-shared-working-style — a shared practice set
 
-**Renamed 2026-09-19 from `precedent-team-working-style`** — the `team`
-level itself was renamed `shared`; see
-[practices/source-naming.md](https://github.com/alex137/BestPractice/blob/staging/practices/source-naming.md)'s
-Story.
-
-This is **precedent-shared-working-style's own space** — a set for one kind of work or one team, holding the
-conventions its members have agreed on. Its
+A shared practice set for [Precedent](https://github.com/alex137/BestPractice/tree/staging)
+about **how a session paces work with the person it is working with**:
+deciding small calls rather than stopping for them, keeping going on
+everything an open question does not touch, and not repeating the same
+disclaimer every run. A project declares it in its `precedent.json`
+`sources`, and it is cloned beside the project. Its
 [`precedent-source.json`](precedent-source.json) says what it is,
 including that this repository is public.
+
+**Renamed 2026-09-19 from `precedent-team-working-style`** — the `team`
+level itself was renamed `shared`; see
+[source-naming](https://github.com/alex137/BestPractice/blob/staging/practices/source-naming.md)'s
+Story.
 
 ## What's here
 
