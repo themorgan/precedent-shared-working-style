@@ -11,20 +11,21 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 | Practice | Tier | Occasion / scope |
 |---|---|---|
 | [answer-first-ask-before-long-work](practices/answer-first-ask-before-long-work.md) | resident | a turn that could start a computation, search or build lasting longer than a few minutes |
-| [assorted-notes](practices/assorted-notes.md) | on-demand | creating a repo's content/ directory, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system |
-| [content-directory](practices/content-directory.md) | on-demand | laying out a repo's root directory, or a root that's grown crowded with agent/tooling files |
+| [assorted-notes](practices/assorted-notes.md) | on-demand | starting a catch-all notes file in a repo, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system |
 | [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
 | [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
+| [organize-scattered-content](practices/organize-scattered-content.md) | on-demand | a repo holds about four or more end-user content files scattered around it, or a session has just added one more to the pile |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [report-up-the-chain](practices/report-up-the-chain.md) | on-demand | finishing a task a session was spawned or triggered to do |
 | [their-constraints-are-given](practices/their-constraints-are-given.md) | on-demand | a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict |
 
 ## Withdrawn practices
 
-1 practice file(s) here are **not in force** and are left out of every table above. **The files are kept on purpose** -- a withdrawn rule and the argument against it are worth re-reading, and `retired` is not a synonym for deleted (that is `decommission-deletes-files`, and it is about mechanisms, not rules). Read one in full with `python3 tools/precedent_show.py SLUG`.
+2 practice file(s) here are **not in force** and are left out of every table above. **The files are kept on purpose** -- a withdrawn rule and the argument against it are worth re-reading, and `retired` is not a synonym for deleted (that is `decommission-deletes-files`, and it is about mechanisms, not rules). Read one in full with `python3 tools/precedent_show.py SLUG`.
 
 | Practice | Status | Now in force at | Why it was withdrawn |
 |---|---|---|---|
+| [content-directory](practices/content-directory.md) | retired | — (nowhere) | **Retired 2026-09-29** (Morgan: *"so many situations that doesn't apply and doesn't make sense"*). |
 | [small-calls](practices/small-calls.md) | deduplicated | [small-calls](practices/small-calls.md) | Migrated here from RepoPersonalPreferences by the phase-3 private-set migration. |
 
 ## The engine

@@ -34,14 +34,14 @@ A background task nobody asked for is stopped, not waited on.
 ```
 When a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict:
   their-constraints-are-given — their own situation is given -- say it once, then work from theirs
-When creating a repo's content/ directory, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system:
-  assorted-notes — a default content/ASSORTED_NOTES.md holds ideas never cited elsewhere (a plain listing link is fine)
+When a repo holds about four or more end-user content files scattered around it, or a session has just added one more to the pile:
+  organize-scattered-content — 4+ scattered end-user files: suggest a directory and its files; recheck later
 When finishing a task a session was spawned or triggered to do:
   report-up-the-chain — report to whoever tasked you; noticed work goes up the chain, never out as a proposal
-When laying out a repo's root directory, or a root that's grown crowded with agent/tooling files:
-  content-directory — put working files in content/ so they don't mix with agent/tooling files
 When reporting a check's outcome that includes a known pre-existing backlog:
   quiet-checks — "checks passed" is fine; don't re-explain the same old backlog
+When starting a catch-all notes file in a repo, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system:
+  assorted-notes — one ASSORTED_NOTES.md for ideas never cited elsewhere; listing it is fine
 ```
 
 ## Standing instruction
