@@ -19,6 +19,9 @@ export PRECEDENT_ALLOW_ANY_AUTHOR=1
 #      the same file -- require the check to fire on the ordinary link
 #      but not on the See also one;
 #   5. the real, current, unplanted repo -- require the check to stay clean.
+#   Later cases, each with its own comment: the migration once
+#   ASSORTED_NOTES.md exists, a catch-all outside content/, a headline-cased
+#   See Also, and a link whose text is the notes file's own name or path.
 set -euo pipefail
 cd "$(dirname "$0")/../../.."
 ROOT="$(pwd)"
@@ -251,6 +254,60 @@ EOF
 )
 status=$?
 rm -rf "$SCRATCH7"
+if [ "$status" -ne 0 ]; then
+  exit "$status"
+fi
+
+# A link whose own text is the notes file's name or path, with no #fragment,
+# names the file as a whole and cites nothing in it -- the listing move,
+# made inline. Run against the engine's own repository on 2026-09-28, this
+# check flagged a doc recipe naming the notes file as the one document its
+# rule does not reach, and a todo item recording where a file lives. The
+# control, in the same file, is a link to the same target whose text is not
+# the file's name: it must still fire.
+SCRATCH8="$(mktemp -d)"
+(
+  set -e
+  git clone -q "$ROOT" "$SCRATCH8"
+  cd "$SCRATCH8"
+  mkdir -p content docs
+  echo "# Assorted notes" > content/ASSORTED_NOTES.md
+  cat > docs/names-the-file.md <<'EOF'
+# A page that names the notes file
+
+The one document this rule does not reach is [ASSORTED_NOTES.md](../content/ASSORTED_NOTES.md).
+It lives at [content/ASSORTED_NOTES.md](../content/ASSORTED_NOTES.md), spelled from the root,
+or at [`../content/ASSORTED_NOTES.md`](../content/ASSORTED_NOTES.md), spelled from here.
+EOF
+  git add -A
+  git -c user.name="Test" -c user.email="test@example.com" commit -q -m "links that name the notes file"
+  if ! out="$(python3 tools/checks/check_assorted_notes.py)"; then
+    echo "FAIL: fired on a link whose text is the notes file's own name or path" >&2
+    echo "$out" >&2
+    exit 1
+  fi
+  echo "ok: a link naming the notes file itself is not a citation"
+
+  cat >> docs/names-the-file.md <<'EOF'
+As [OTHER_NOTES.md](../content/ASSORTED_NOTES.md) says, we should ship it.
+EOF
+  git add -A
+  git -c user.name="Test" -c user.email="test@example.com" commit -q -m "a link whose text names a different file"
+  out="$(python3 tools/checks/check_assorted_notes.py || true)"
+  if ! grep -q "docs/names-the-file.md:6:" <<<"$out"; then
+    echo "FAIL: stopped firing on a citation whose text is not the notes file's name" >&2
+    echo "$out" >&2
+    exit 1
+  fi
+  if grep -qE "docs/names-the-file.md:[345]:" <<<"$out"; then
+    echo "FAIL: fired on a line that only names the notes file" >&2
+    echo "$out" >&2
+    exit 1
+  fi
+  echo "ok: still fires when the link text is not the notes file's name or path"
+)
+status=$?
+rm -rf "$SCRATCH8"
 if [ "$status" -ne 0 ]; then
   exit "$status"
 fi
