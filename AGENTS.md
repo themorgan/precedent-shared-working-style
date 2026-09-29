@@ -5,9 +5,9 @@ This repo IS `precedent-shared-working-style` — a **shared** source for
 named for a **subject** rather than for a roster. Its subject is **how a session paces work with the person it is working with**, which is its `precedent-source.json` `subject`. It loads on two channels: its `tier: resident` practices are carried in the block below and fire on every turn, and the rest sit in that block's occasion index, pulled in by the standing instruction when their occasion comes up.
 
 **Any team whose work includes that subject declares this set alongside its
-own**, and a repo may declare several team sets — see
+own**, and a repo may declare several shared sets — see
 [README.md](README.md) for what is here, and Precedent's `INSTALL.md`
-("Which team sets does this repo declare?") for how a project picks.
+("Which shared sets does this repo declare?") for how a project picks.
 
 <!-- BEGIN GENERATED: precedent-loader -->
 
