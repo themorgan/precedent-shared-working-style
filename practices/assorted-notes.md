@@ -4,7 +4,7 @@ title:       ASSORTED_NOTES.md holds ideas never cited elsewhere -- but may be l
 tier:        on-demand
 severity:    advisory
 applies_to:  ["**"]
-occasion:    "starting a catch-all notes file in a repo, or migrating a legacy BRAINSTORM.md/NOTES.md/IDEAS.md into the new system"
+occasion:    "starting a catch-all notes file, or renaming a legacy BRAINSTORM, NOTES or IDEAS file"
 gates:       []
 index_clause: "one ASSORTED_NOTES.md for ideas never cited elsewhere; listing it is fine"
 checked_by:  tools/checks/check_assorted_notes.py

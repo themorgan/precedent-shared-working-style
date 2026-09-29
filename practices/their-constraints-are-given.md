@@ -4,7 +4,7 @@ title:       "A person's account of their own constraints is given, not a claim 
 tier:        on-demand
 severity:    default
 applies_to:  ["**"]
-occasion:    "a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict"
+occasion:    "a person states a fact about their own situation (cost, risk, time, priorities) that the evidence seems to contradict"
 gates:       []
 index_clause: "their own situation is given -- say it once, then work from theirs"
 checked_by:  null

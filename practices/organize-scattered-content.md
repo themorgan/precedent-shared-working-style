@@ -4,7 +4,7 @@ title:       Scattered end-user content gets a recommendation to group it
 tier:        on-demand
 severity:    advisory
 applies_to:  ["**"]
-occasion:    "a repo holds about four or more end-user content files scattered around it, or a session has just added one more to the pile"
+occasion:    "about four or more end-user content files sit scattered around a repo"
 gates:       []
 index_clause: "4+ scattered end-user files: suggest a directory and its files; recheck later"
 checked_by:  null
