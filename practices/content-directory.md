@@ -9,13 +9,13 @@ gates:       []
 index_clause: "put working files in content/ so they don't mix with agent/tooling files"
 checked_by:  null
 defines:     []
-status:      active
+status:      retired
 supersedes:  []
 overrides:   null
 added:       "2026-09-23"
 approved_by: "Morgan F, 2026-09-23, moved from the individual set precedent-individual (there: Morgan F, 2026-09-04)"
 source_practice_number: null
-in_force_at: null
+in_force_at: none
 strength: decided
 ---
 ## Rule
@@ -25,6 +25,8 @@ When a repo's root directory is carrying so much machinery for managing agents -
 The root of a repo like this one already does a specific job -- it's where an agent looks first for `AGENTS.md`, tool scripts, and config -- and piling the actual content being worked on into that same directory makes both harder to scan: the machinery gets lost among the content, and the content gets lost among the machinery. Separating them keeps each directory legible for what it's for.
 
 ## Story
+**Retired 2026-09-29** (Morgan: *"so many situations that doesn't apply and doesn't make sense"*). Replaced by [organize-scattered-content](organize-scattered-content.md) in this set: recommend grouping about four or more scattered end-user files, with a named directory and file list, rather than a fixed `content/` directory.
+
 **Not a migration casualty, unlike the rest of the backfill this landed
 with.** This practice was written natively in this set on 2026-09-04
 (`aa1d5f8`), after the RepoPersonalPreferences migration, so there is no
