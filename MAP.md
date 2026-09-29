@@ -6,7 +6,7 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 8 practice files (3 resident, 5 on-demand). One file per practice.
+`practices/` holds 9 practice files (3 resident, 6 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
@@ -17,6 +17,7 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 | [organize-scattered-content](practices/organize-scattered-content.md) | on-demand | a repo holds about four or more end-user content files scattered around it, or a session has just added one more to the pile |
 | [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [report-up-the-chain](practices/report-up-the-chain.md) | on-demand | finishing a task a session was spawned or triggered to do |
+| [revert-needs-no-trailer](practices/revert-needs-no-trailer.md) | on-demand | committing a revert, or a trailer check flags one |
 | [their-constraints-are-given](practices/their-constraints-are-given.md) | on-demand | a person states a fact about their own situation -- cost, risk, time, priorities, how they work -- that the session's own reading of the evidence would soften or contradict |
 
 ## Withdrawn practices
