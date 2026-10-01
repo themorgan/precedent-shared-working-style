@@ -6,7 +6,7 @@ severity:    advisory
 applies_to:  ["**"]
 occasion:    "about four or more end-user content files sit scattered around a repo"
 gates:       []
-index_clause: "4+ scattered end-user files: suggest a directory and its files; recheck later"
+index_clause: "name a directory and its files, ask, move nothing until yes; recheck later"
 checked_by:  null
 defines:     []
 status:      active

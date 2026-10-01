@@ -23,7 +23,7 @@ approved_by: "Morgan F, 2026-09-12 -- requested directly, as one of two rules he
 ## Detail
 The distinction that matters is between **reporting** and **shopping**. "Here is what I did; here is what is blocked; I also noticed X, which touches Y" is a report, and belongs in every closing message that has an X. "Shall I also do X?" put to a person is shopping, and it costs three things at once: their attention, the risk of a duplicate thread, and the session's own context if they answer and it resumes.
 
-Where a session genuinely cannot proceed without a decision, that is a blocker, and [nonblocking-questions](nonblocking-questions.md) already says what to do with it -- ask early, keep working on everything the answer does not touch. This rule is about the other kind: the thing that would be good to do next and blocks nothing.
+Where a session genuinely cannot proceed without a decision, that is a blocker, and part (4) of [answer-first-ask-before-long-work](answer-first-ask-before-long-work.md) already says what to do with it -- ask early, keep working on everything the answer does not touch. This rule is about the other kind: the thing that would be good to do next and blocks nothing.
 
 A session that spawns another names it in its own report -- session id and subject -- so that any one branch of a fleet tells the reader the rest of it exists. That is the same obligation pointed downward: the tree is only legible if each node reports its children.
 

@@ -9,7 +9,8 @@ gates:       []
 index_clause: "\"checks passed\" is fine; don't re-explain the same old backlog"
 checked_by:  null
 defines:     []
-status:      active
+status:      deduplicated
+in_force_at: verdict-not-mechanism
 supersedes:  []
 overrides:   null
 added:       2026-08-31
@@ -51,6 +52,18 @@ that actually failed, or a warning this edit introduced, is new information
 every time and always worth flagging.
 
 **Moved to `precedent-team-working-style` on 2026-09-09**, from `precedent-team-maintainers`, in the subject split recorded in BestPractice's own history (2026-09-09) -- its TODO.md has since moved that content into per-item files, so the old anchor no longer resolves. The rule governs how a session works alongside the person it is working with -- any work, any team -- and it was reachable only by repositories that declared the maintainers' set. Two of the three rules moved here are `tier: resident`, so they fire on every turn of every session: the reach lost while they sat behind a repo-mechanics set is the whole reason this one exists. The copy left behind is `status: deduplicated` and points here; nothing was deleted and the rule was never out of force (`spec/MOVING_PRACTICES.md`, land first, deduplicate second).
+
+**Deduplicated on 2026-10-01**: now in force from the universal catalogue, as
+part of [`verdict-not-mechanism`](https://github.com/alex137/BestPractice/blob/staging/practices/verdict-not-mechanism.md),
+which already governs what a session tells the person about anything a check
+raises. BestPractice's change on branch `claude/reduction-pass-review` adds
+to it the sentence this rule existed for: an unchanged, known backlog in a
+check's output is never re-explained. Land first, deduplicate second -- this
+stub is meant to reach a merge only after that sentence has. Done in the
+reduction pass recorded in BestPractice's
+[todo-2026-09-30-session-file-cut-to-4000.md](https://github.com/alex137/BestPractice/blob/staging/todo/todo-2026-09-30-session-file-cut-to-4000.md)
+("Reduction pass review, 2026-10-01"). Approved by Morgan F, 2026-10-01:
+*"Question 3 - all are great, approved"* (strength: decided).
 
 ## Install
 No mechanical check: it governs how a session narrates a check's outcome in its own reply across turns of a conversation -- whether the same static-backlog disclaimer got repeated -- which isn't content this repo's tree, or any single commit, holds a record of.

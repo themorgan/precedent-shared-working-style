@@ -13,9 +13,9 @@ own**, and a repo may declare several shared sets — see
 
 <!-- Regenerate with: python3 tools/build_views.py -- do not hand-edit this block; `python3 tools/build_views.py --check` exits non-zero on drift. Source: practices/ -- edit the practice file, never this block. -->
 
-## Resident block (~305 of 425 token budget, 3 of 9 practices)
+## Resident block (~276 of 425 token budget, 2 of 7 practices)
 
-**answer-first-ask-before-long-work.** Three parts. **(1) Answer the easy questions in a message before starting
+**answer-first-ask-before-long-work.** Four parts. **(1) Answer the easy questions in a message before starting
 anything long** — in the same turn; the long run never gates the answer.
 **(2) A task that will run longer than a few minutes is proposed, not
 started:** what it is, how long from the tool's own cost line, what it
@@ -24,24 +24,22 @@ checks a commit needs on the files the turn touched, and a run already
 asked for by name. **(3) When idle on a wait, say what the wait is for,
 what it will change, and how to stop it** — never a bare "still running".
 A background task nobody asked for is stopped, not waited on.
+**(4) An open question is not a stopping point:** ask it early and keep
+working on everything its answer does not touch.
 
 **default-register.** **The register of a reply belongs to its reader.** Where the person you are working with has declared their own -- their individual practice set is where they do it -- that declaration governs and this rule steps aside. **Where none resolves, write to a reader who is not technical**, because on this team they generally are not; `## Detail` says what that means in full.
-
-**nonblocking-questions.** Once a question is worth asking at all, asking is not itself a stopping point. A session holding a queue of work and an open question doesn't go idle waiting for the answer -- it keeps going on everything the answer doesn't touch.
 
 ## Occasion index
 
 ```
-When a person states a fact about their own situation (cost, risk, time, priorities) that the evidence seems to contradict:
-  their-constraints-are-given — their own situation is given -- say it once, then work from theirs
+When a person's account of their own situation seems contradicted by the evidence:
+  their-constraints-are-given — say it once, then work from theirs
 When about four or more end-user content files sit scattered around a repo:
-  organize-scattered-content — 4+ scattered end-user files: suggest a directory and its files; recheck later
+  organize-scattered-content — name a directory and its files, ask, move nothing until yes; recheck later
 When committing a revert, or a trailer check flags one:
   revert-needs-no-trailer — a revert commit may leave out the Session: trailer
 When finishing a task a session was spawned or triggered to do:
   report-up-the-chain — report to whoever tasked you; noticed work goes up the chain, never out as a proposal
-When reporting a check's outcome that includes a known pre-existing backlog:
-  quiet-checks — "checks passed" is fine; don't re-explain the same old backlog
 When starting a catch-all notes file, or renaming a legacy BRAINSTORM, NOTES or IDEAS file:
   assorted-notes — one ASSORTED_NOTES.md for ideas never cited elsewhere; listing it is fine
 ```
