@@ -36,17 +36,17 @@ When a person's account of their own situation seems contradicted by the evidenc
   their-constraints-are-given — say it once, then work from theirs
 When about four or more end-user content files sit scattered around a repo:
   organize-scattered-content — name a directory and its files, ask, move nothing until yes; recheck later
-When committing a revert, or a trailer check flags one:
-  revert-needs-no-trailer — a revert commit may leave out the Session: trailer
 When finishing a task a session was spawned or triggered to do:
   report-up-the-chain — report to whoever tasked you; noticed work goes up the chain, never out as a proposal
 When starting a catch-all notes file, or renaming a legacy BRAINSTORM, NOTES or IDEAS file:
   assorted-notes — one ASSORTED_NOTES.md for ideas never cited elsewhere; listing it is fine
+
+(More on-demand practices are not listed here: one whose applies_to names real paths, or which declares a gate, is reached by those channels instead -- `precedent_paths.py FILE` and `precedent_gate.py MOMENT`. A trigger a PERSON SAYS cannot be reached that way and is always listed above. `precedent_show.py --index-omitted` names the omitted ones.)
 ```
 
 ## Standing instruction
 
-Before starting work of a kind named in the occasion index above, run `python3 tools/precedent_show.py SLUG` for each listed slug to load its Rule. When editing a file, `python3 tools/precedent_paths.py FILE` prints any on-demand practice whose `applies_to` matches it, without needing the index at all. If `.precedent/SESSION_PRACTICES.md` exists, read it too: it carries the practices in force from the other sources this repo declares, which are NOT in this block and bind work here exactly as these do. It is regenerated at session start and is deliberately untracked — never commit it or quote it into a pull request.
+Before starting work of a kind named in the occasion index above, run `python3 tools/precedent_show.py SLUG` for each listed slug to load its Rule. When editing a file, `python3 tools/precedent_paths.py FILE` prints any on-demand practice whose `applies_to` matches it, without needing the index at all. At a named moment — before pushing — run `python3 tools/precedent_gate.py push`: some practices fire at a moment rather than in a file, and no path glob reaches those. If `.precedent/SESSION_PRACTICES.md` exists, read it too: it carries the practices in force from the other sources this repo declares, which are NOT in this block and bind work here exactly as these do. It is regenerated at session start and is deliberately untracked — never commit it or quote it into a pull request.
 
 <!-- END GENERATED -->
 
