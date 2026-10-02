@@ -5,18 +5,20 @@ tier:        on-demand
 severity:    advisory
 applies_to:  ["**"]
 occasion:    "committing a revert, or a trailer check flags one"
-gates:       []
+gates:       ["push"]
+gates_why:   "The push check's trailer check already exempts a revert while this practice is in force, so a session that never sees this rule loses nothing: it adds a trailer, which the Rule calls welcome. The push gate prints it where a trailer is at issue. index_required: false records that judgment: Morgan, 2026-10-01 (\"Booked, attach both shared sets, and do both Tier 2 items (and note as a possibility for the future in a Todo the other tier 2 items to consider)\", strength: decided)."
 index_clause: "a revert commit may leave out the Session: trailer"
+index_required: false
 checked_by:  null
 defines:     []
 status:      active
+in_force_at: null
 supersedes:  []
 overrides:   null
 added:       "2026-09-29"
-approved_by: "Morgan F, 2026-09-29"
-in_force_at: null
-source_practice_number: null
+approved_by: "Morgan F, 2026-09-29; push gate, index line dropped: Morgan, 2026-10-01 (\"Booked, attach both shared sets, and do both Tier 2 items (and note as a possibility for the future in a Todo the other tier 2 items to consider)\", strength: decided)"
 strength: decided
+source_practice_number: null
 ---
 ## Rule
 **A revert commit may leave out the `Session:` trailer** that
@@ -47,6 +49,8 @@ trailer rule to say that it is okay if reverts don't have it ... And I think
 this should be in the working-style repo, maybe Alex or others don't want to
 include that."* So the exemption lives in this set, which a team declares
 by choice, rather than in the universal rule everyone gets.
+
+**Push gate, and off the occasion index, from 2026-10-01.** The reduction pass for precedent-individual's session-start file counted this among the lines a mechanical check already covers at push: `check_session_trailer.py` skips reverts while this practice is in force, so the line in every session's index bought nothing. Morgan (strength: decided): *"Booked, attach both shared sets, and do both Tier 2 items (and note as a possibility for the future in a Todo the other tier 2 items to consider)"*
 
 ## Install
 No check of its own: the trailer check reads whether this practice is in

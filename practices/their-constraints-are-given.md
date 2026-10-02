@@ -4,9 +4,9 @@ title:       "A person's account of their own constraints is given, not a claim 
 tier:        on-demand
 severity:    default
 applies_to:  ["**"]
-occasion:    "a person states a fact about their own situation (cost, risk, time, priorities) that the evidence seems to contradict"
+occasion:    "a person's account of their own situation seems contradicted by the evidence"
 gates:       []
-index_clause: "their own situation is given -- say it once, then work from theirs"
+index_clause: "say it once, then work from theirs"
 checked_by:  null
 defines:     []
 command:     null
@@ -140,6 +140,13 @@ private team set it cannot see -- not a smaller audience, actually gone. The
 tool that runs every other kind of move refuses exactly this direction
 (`--from universal`) for exactly this reason, which this incident confirms
 rather than merely asserts. Reverted the same day, Morgan F: stays universal.
+
+**2026-10-01: that last sentence no longer holds.** The universal copy was
+withdrawn later on 2026-09-23 (BestPractice commit `73ad9f14`, by the move
+tool's safe path), and BestPractice's own file is now `status:
+deduplicated`, pointing here. This set's copy is the one in force. Its
+occasion-index line was shortened on 2026-10-01, same meaning, in the
+reduction pass Morgan F approved that day.
 
 ## Install
 

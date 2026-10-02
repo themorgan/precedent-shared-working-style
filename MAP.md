@@ -10,27 +10,27 @@ Precedent's own repo map (PRACTICE_ENGINE_PLAN.md, Sequence row 2: "make AGENTS.
 
 ## The practice catalogue
 
-`practices/` holds 9 practice files (3 resident, 6 on-demand). One file per practice.
+`practices/` holds 7 practice files (2 resident, 5 on-demand). One file per practice.
 
 | Practice | Tier | Occasion / scope |
 |---|---|---|
 | [answer-first-ask-before-long-work](practices/answer-first-ask-before-long-work.md) | resident | a turn that could start a computation, search or build lasting longer than a few minutes |
 | [assorted-notes](practices/assorted-notes.md) | on-demand | starting a catch-all notes file, or renaming a legacy BRAINSTORM, NOTES or IDEAS file |
 | [default-register](practices/default-register.md) | resident | writing any reply to the person you are working with |
-| [nonblocking-questions](practices/nonblocking-questions.md) | resident | a question worth asking has come up mid-task |
 | [organize-scattered-content](practices/organize-scattered-content.md) | on-demand | about four or more end-user content files sit scattered around a repo |
-| [quiet-checks](practices/quiet-checks.md) | on-demand | reporting a check's outcome that includes a known pre-existing backlog |
 | [report-up-the-chain](practices/report-up-the-chain.md) | on-demand | finishing a task a session was spawned or triggered to do |
 | [revert-needs-no-trailer](practices/revert-needs-no-trailer.md) | on-demand | committing a revert, or a trailer check flags one |
-| [their-constraints-are-given](practices/their-constraints-are-given.md) | on-demand | a person states a fact about their own situation (cost, risk, time, priorities) that the evidence seems to contradict |
+| [their-constraints-are-given](practices/their-constraints-are-given.md) | on-demand | a person's account of their own situation seems contradicted by the evidence |
 
 ## Withdrawn practices
 
-2 practice file(s) here are **not in force** and are left out of every table above. **The files are kept on purpose** -- a withdrawn rule and the argument against it are worth re-reading, and `retired` is not a synonym for deleted (that is `decommission-deletes-files`, and it is about mechanisms, not rules). Read one in full with `python3 tools/precedent_show.py SLUG`.
+4 practice file(s) here are **not in force** and are left out of every table above. **The files are kept on purpose** -- a withdrawn rule and the argument against it are worth re-reading, and `retired` is not a synonym for deleted (that is `decommission-deletes-files`, and it is about mechanisms, not rules). Read one in full with `python3 tools/precedent_show.py SLUG`.
 
 | Practice | Status | Now in force at | Why it was withdrawn |
 |---|---|---|---|
 | [content-directory](practices/content-directory.md) | retired | — (nowhere) | **Retired 2026-09-29** (Morgan: *"so many situations that doesn't apply and doesn't make sense"*). |
+| [nonblocking-questions](practices/nonblocking-questions.md) | deduplicated | [answer-first-ask-before-long-work](practices/answer-first-ask-before-long-work.md) | Migrated here from RepoPersonalPreferences by the phase-3 private-set migration. |
+| [quiet-checks](practices/quiet-checks.md) | deduplicated | `verdict-not-mechanism` — in another source; `python3 tools/precedent_show.py verdict-not-mechanism` | Migrated here from RepoPersonalPreferences by the phase-3 private-set migration; the Story is backfilled from that pack's own text, and it names an observed habit rather than a single dated failure. |
 | [small-calls](practices/small-calls.md) | deduplicated | [small-calls](practices/small-calls.md) | Migrated here from RepoPersonalPreferences by the phase-3 private-set migration. |
 
 ## The engine
