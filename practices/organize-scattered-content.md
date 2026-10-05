@@ -10,13 +10,13 @@ index_clause: "name a directory and its files, ask, move nothing until yes; rech
 checked_by:  null
 defines:     []
 status:      active
+in_force_at: null
 supersedes:  ["content-directory", "content-subdirs"]
 overrides:   null
 added:       "2026-09-29"
 approved_by: "Morgan F, 2026-09-29"
-in_force_at: null
-source_practice_number: null
 strength: decided
+source_practice_number: null
 ---
 ## Rule
 When **about four or more content files meant for end users** -- the

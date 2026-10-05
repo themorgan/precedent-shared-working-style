@@ -10,13 +10,13 @@ index_clause: "put working files in content/ so they don't mix with agent/toolin
 checked_by:  null
 defines:     []
 status:      retired
+in_force_at: none
 supersedes:  []
 overrides:   null
 added:       "2026-09-23"
 approved_by: "Morgan F, 2026-09-23, moved from the individual set precedent-individual (there: Morgan F, 2026-09-04)"
-source_practice_number: null
-in_force_at: none
 strength: decided
+source_practice_number: null
 ---
 ## Rule
 When a repo's root directory is carrying so much machinery for managing agents -- `AGENTS.md`/`CLAUDE.md`, tool scripts, hooks, config -- that the files actually being worked on and referenced get lost among them, put those working files in a `content/` directory rather than the root. This is a default I fall back to when the repo doesn't already define its own layout convention, not a mandate: an existing, established structure (a `docs/`, `src/`, or whatever the repo already uses) wins over this every time.
