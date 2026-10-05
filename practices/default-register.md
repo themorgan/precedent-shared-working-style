@@ -9,7 +9,8 @@ gates:       []
 index_clause: "match the reader's declared register; with none declared, write plain English"
 checked_by:  null
 defines:     []
-status:      active
+status:      deduplicated
+in_force_at: default-register
 supersedes:  []
 overrides:   null
 added:       2026-09-06
@@ -64,6 +65,8 @@ dropped, and the default is unchanged for a reader who has declared
 nothing. Morgan chose it from a costed menu: *"Do A and B and C - I like
 all"* -- sole approver in `approvers.json`, so the instruction is the
 approval. strength: decided.
+
+Moved to the shared set `precedent-shared-writing` on 2026-10-05, approved there by Morgan F; its removal from `precedent-shared-working-style` approved by Morgan F, one of that set's approvers. This copy is deduplicated; the rule is in force there as `default-register`.
 
 ## Install
 Nothing to install -- a shared practice is resolved live from this repo by Precedent's own [`tools/precedent_resolve.py`](https://github.com/alex137/BestPractice/blob/staging/tools/precedent_resolve.py), once a consuming project declares this repo as a `"level": "shared"` source in its own `precedent.json`. The practice is `tier: resident`, so it arrives in the loader block of every session in such a project rather than waiting on an occasion.
