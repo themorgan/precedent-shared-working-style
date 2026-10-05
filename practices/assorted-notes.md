@@ -9,13 +9,13 @@ gates:       []
 index_clause: "one ASSORTED_NOTES.md for ideas never cited elsewhere; listing it is fine"
 checked_by:  tools/checks/check_assorted_notes.py
 defines:     ["ASSORTED_NOTES.md"]
-status:      active
+status:      deduplicated
 supersedes:  []
 overrides:   null
 added:       "2026-09-23"
 approved_by: "Morgan F, 2026-09-23, moved from the individual set precedent-individual (there: Morgan F, 2026-09-04; revised 2026-09-05, Morgan F, to exempt plain directory-listing links, then again the same day to exempt any See also section)"
 source_practice_number: null
-in_force_at: null
+in_force_at: assorted-notes
 strength: decided
 ---
 ## Rule
@@ -36,6 +36,8 @@ One consistently named catch-all for not-yet-formed thoughts, kept apart from an
 2026-09-07, the directory half: a consuming repo renamed `content/` to `business-modeling/`, so that every content directory it had said what it held. Its `ASSORTED_NOTES.md` moved with the rename, intact -- and the check, which tested one literal path, concluded the legacy-name migration had never happened and re-armed `BRAINSTORM.md`/`NOTES.md`/`IDEAS.md` as live legacy names across that whole repo. It kept passing by luck alone: the only links to that repo's `book-moses/NOTES.md` happened to sit in a `MAP.md` and a `README.md`, both exempt as listing documents, and one ordinary link from anywhere else would have failed it for a violation that was never there. That is the same false positive the 2026-09-06 fix above was written to stop, reintroduced through the directory name instead of the filename -- so the Rule now says which half is fixed and which is a default, and the check asks the tracked tree for an `ASSORTED_NOTES.md` at any depth rather than testing one path.
 
 Extended the same day: the same session then adopted a convention (`content-page-footer-links`, repo-local to that same repo) requiring every content page to end with a `## See also` linking every other content page, `content/ASSORTED_NOTES.md` included -- and the listing-document-only exemption didn't cover it, since a page's own footer isn't a `README.md` or `MAP.md`. Widened here rather than left as a gap: a `## See also` section is the same listing move as a directory index, just distributed one page at a time instead of centralized.
+
+Moved to the shared set `precedent-shared-writing` on 2026-10-05, approved there by Morgan F; its removal from `precedent-shared-working-style` approved by Morgan F, one of that set's approvers. This copy is deduplicated; the rule is in force there as `assorted-notes`.
 
 ## Install
 Reached via occasion. Checked mechanically by [`tools/checks/check_assorted_notes.py`](../tools/checks/check_assorted_notes.py): a markdown link anywhere in the tracked tree, outside this practice file, the notes file itself, any file whose basename is `README.md` or `MAP.md`, and any `## See also` section (from that heading to the next `## ` heading or end of file) in any file, whose target path ends in `ASSORTED_NOTES.md` (or one of the legacy names it replaces) fails the check. Whether the legacy names still count is decided by asking `git ls-files` for an `ASSORTED_NOTES.md` at any depth -- not by testing `content/`, per the Rule's own default-vs-fixed distinction. Scope is `tree`. It can't catch a bare prose reference with no link -- only the linked form, which is the catchable case in a repo whose own standing convention is to always link ([doc-references-are-links](https://github.com/alex137/BestPractice/blob/staging/practices/doc-references-are-links.md), universal). Two-direction tested in [`tools/checks/tests/test_assorted_notes.sh`](../tools/checks/tests/test_assorted_notes.sh).
