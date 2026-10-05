@@ -11,11 +11,11 @@ checked_by:  null
 defines:     []
 command:     null
 status:      active
+in_force_at: null
 supersedes:  []
 overrides:   null
 added:       "2026-09-23"
 approved_by: "Morgan F, 2026-09-23, duplicated from the universal set BestPractice -- that copy stays active, see its own Story"
-in_force_at: null
 strength: decided
 ---
 ## Rule
