@@ -5,6 +5,8 @@
 
 # precedent-shared-working-style — a shared practice set
 
+**This set is retired as of 2026-10-06: its rules now live in universal Precedent and in `precedent-shared-writing`, so stop declaring it in `precedent.json`.**
+
 A shared practice set for [Precedent](https://github.com/alex137/BestPractice/tree/staging)
 about **how a session paces work with the person it is working with**:
 deciding small calls rather than stopping for them, keeping going on
